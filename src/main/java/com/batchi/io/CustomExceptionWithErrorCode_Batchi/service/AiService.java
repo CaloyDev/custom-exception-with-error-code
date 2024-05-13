@@ -43,7 +43,7 @@ public class AiService {
     }
 
     public AiTextResponse getText(AiEntityRequestDTO aiEntityRequestDTO) {
-        return new AiTextResponse(aiEntityRequestDTO.getMessages().get(0).getText());
+        return new AiTextResponse(aiEntityRequestDTO.getMessages().get(0).getText() + " this is a repeated message from ai");
     }
 
 
